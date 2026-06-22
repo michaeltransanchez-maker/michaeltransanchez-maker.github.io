@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+      --header-height: 90px;
+}
+
+#About_ME,#Experience__,#Hobbies__,#Projects__{
+    scroll-margin-top: var(--header-height);
+}
+
+
+
+.Pages{
+     display: grid;
+     grid-template-rows: auto 1fr auto;
+     min-height: 100vh;
+     font-size: 40px;
+     font-family: "Montserrat";
+     background: linear-gradient(to right, #605c3c, #3c3b3f);
+}
+
+body {
+    padding-top: var(--header-height);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: #c1cece;
+          /*
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+        url("san francisco.jpg");*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+header.Header{
+     
+     height: var(--header-height);
+     color: white;
+     background: linear-gradient(to right, rgb(72, 68, 68,0.95), rgb(0, 0, 0,0.95));
+     position: fixed;
+     top: 0;
+     left:0;
+     width: 100%;
+     z-index: 1000;
+}
+
+
+header.Header .send_to{
+     display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+
+}
+
+
+
+
+
+
+a{
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    /*transition: color 0.2s ease;*/
+}
+
+@keyframes bounceup {
+     0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+     
+}
+
+
+
+
+
+
+
+section.about,section.Hobbies{
+     animation: scrolll linear;
+     animation-timeline: view();
+     animation-range: entry 0% cover 30%;
+     
+     
+
+}
+
+
+section.Experience,section.Projects{
+     animation: scrolll2 linear;
+     animation-timeline: view();
+     animation-range: entry 0% cover 30%;
+     
+     
+
+}
+
+@keyframes scrolll {
+     from{
+     opacity: 0;
+     transform: translateX(-100px); 
+          
+          
+     }
+
+     to{
+     opacity: 1;
+     transform: translateX(0px);  
+     }
+}
+
+
+@keyframes scrolll2 {
+     from{
+     opacity: 0;
+     transform: translateX(100px); 
+          
+          
+     }
+
+     to{
+     opacity: 1;
+     transform: translateX(0px);  
+     }
+}
+
+
+
+
+
+a:hover{
+     color: rgb(50, 131, 127);
+     animation: bounceup 0.6s ease;
+     
+}
+
+
+
+
+.info{
+     margin-left: 60px;
+     margin-right: 60px;
+     
+}
+/*
+.section1-text h6 {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    width: 0;
+
+    animation:
+     typing 2s steps(11, end) forwards,
+     hideCursor 0s 2s forwards;
+     }
+
+*/
+
+
+
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes hideCursor {
+    to {
+        border-right-color: transparent;
+    }
+}
+
+section.section1{
+     font-size: 100px;
+     min-height: 85vh;
+     display: flex;
+     align-items: center;
+     
+     
+     
+}
+
+section .sides{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     width: 100%;
+     align-items: center;
+}
+
+.section1-text h6,.section1-text h1{
+     margin: 0px;  
+}
+
+
+
+section.section1 #right,section.section1 #left{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section .indent {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+
+
+section.Experience .main{
+     display: grid;
+     grid-template-columns: 1fr auto;
+     width: 100%; 
+     
+
+     
+}
+
+
+
+
+
+
+section.Experience h5.first{
+     margin-top: 0px;
+}
+
+section.Experience h5,section.Experience h6{
+     margin-bottom: 6px;
+     margin-top: 5px;
+}
+
+
+/*
+.work_left {
+    border: 2px solid red;
+}
+
+.work_right {
+    border: 2px solid blue;
+}
+*/
+
+
+
+
+.foot_columns{
+     display: flex;
+     gap: 90px;
+     justify-content: center;
+}
+
+
+.Where_to_find_me{
+     text-align: center;
+}
+
+
+
+
+
