@@ -210,7 +210,7 @@ section .sides{
         font-size: clamp(28px, 6vw, 60px);
     }
 
-    .section1-text h1 {
+    .section1-text h2 {
         font-size: 2.2rem;
     }
 
@@ -237,7 +237,7 @@ section .sides{
 }
 }
 
-.section1-text h6,.section1-text h1{
+.section1-text h6,.section1-text h2{
      margin: 0px;  
 }
 
