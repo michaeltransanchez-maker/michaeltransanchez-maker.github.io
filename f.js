@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const h6 = document.querySelector(".section1-text h6");
-    const h1 = document.querySelector(".section1-text h1");
+    const h1 = document.querySelector(".section1-text h2");
 
     const text6 = "Welcome! I'm";
     const text1 = "Michael, Sanchez";
