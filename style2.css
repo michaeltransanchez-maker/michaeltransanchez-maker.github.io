@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+font-family: "Montserrat";
+  
+}
+
+body{
+    background: linear-gradient(to right, #605c3c, #3c3b3f);
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+  
+}
+
+/* each project becomes its own row */
+.project {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* shared left/right layout */
+.pdf,
+.description{
+  flex: 1;
+  padding: 4cqw;
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: 40vh;
+  border: none;
+}
+
+p{
+    font-size: clamp(3rem, 1.5vw, 1.2rem);
+}
+
+h1{
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .pdf-viewer {
+    display: none;
+  }
+  .pdf-link {
+        display: inline-block;
+    }
+ p{
+   font-size: clamp(1rem, 1.5vw, 1.2rem); 
+ }
+
+ a{
+   font-size: clamp(2rem, 1.5vw, 1.2rem); 
+ }
+}
+
